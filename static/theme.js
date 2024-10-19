@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav {
-            background: rgba(255, 255, 255, 0.6); /* 白色背景，透明度60% */
             border-radius: 10px; /* 圆角边框 */
             min-width: unset;
         }
@@ -235,7 +234,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav {
-            background: rgba(255, 255, 255, 0.6); /* 白色背景，透明度60% */
             border-radius: 10px; /* 圆角边框 */
             min-width: unset;
         }
