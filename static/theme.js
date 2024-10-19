@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .avatar {
-            width: 200px;
-            height: 200px;
+            width: 125px;
+            height: 125px;
         }
         
         #header h1 a {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav-item:hover {
-            background-color: #c3e4e3;
+            background-color: #DDDDDD;
             border-radius: 10px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #3cd2cd;
+            background-color: #DDDDDD;
         }
         
         div.title-right .btn .btndescription {
@@ -128,18 +128,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let style = document.createElement("style");
         style.innerHTML = `
 
-        @media (min-width: 1001px) {
-        body {
-            padding: 45px;
-        }
-        }
-
-        @media (max-width: 1000px) {
-        body {
-            padding: 20px;
-        }
-        }
-
 
         /* markdown内容 */
         .markdown-body img {
@@ -177,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #3cd2cd;
+            background-color: #DDDDDD;
         }
 
         div.title-right .btn .btndescription {
@@ -225,21 +213,13 @@ document.addEventListener('DOMContentLoaded', function() {
             align-items: flex-end;
         }
         
-        @media (max-width: 600px) {
-            .tagTitle {
-                display: unset;
-                font-size: 14px;
-                white-space: unset;
-            }
-        }
-        
         .SideNav {
             border-radius: 10px; /* 圆角边框 */
             min-width: unset;
         }
         
         .SideNav-item:hover {
-            background-color: #c3e4e3;
+            background-color: #DDDDDD;
             border-radius: 10px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -264,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #3cd2cd;
+            background-color: #DDDDDD;
         }
         
         div.title-right .btn .btndescription {
