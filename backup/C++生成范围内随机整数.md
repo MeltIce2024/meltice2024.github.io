@@ -16,7 +16,7 @@ uniform_int_distribution<int> distribution(整数范围);
 uniform_int_distribution<int> distribution(1, 10);
 ```
 这段代码会让生成器生成1到10之内的随机整数
-## 4. 生成随机数\
+## 4. 生成随机数
 使用 `distribution(generator)` 生成随机数
 打印出生成的随机数：
 ```cpp
