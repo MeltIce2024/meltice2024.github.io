@@ -22,3 +22,4 @@ uniform_int_distribution<int> distribution(1, 10);
 ```cpp
 cout << "随机数: " << distribution(generator) << endl;
 ```
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
