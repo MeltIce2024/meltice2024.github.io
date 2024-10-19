@@ -3,6 +3,10 @@
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
 可以使用string头文件里的 `getline` 函数来替代cin
+首先需要引入string头文件：
+```cpp
+#include <string>
+```
 使用方法：
 ```cpp
 getline(cin, 变量名);

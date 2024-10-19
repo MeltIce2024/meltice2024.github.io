@@ -15,6 +15,10 @@
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
 可以使用string头文件里的 `getline` 函数来替代cin
+首先需要引入string头文件：
+```cpp
+#include <string>
+```
 使用方法：
 ```cpp
 getline(cin, 变量名);
@@ -31,6 +35,10 @@ getline(cin, input);
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
 可以使用string头文件里的 `getline` 函数来替代cin
+首先需要引入string头文件：
+```cpp
+#include <string>
+```
 使用方法：
 ```cpp
 getline(cin, 变量名);
@@ -118,7 +126,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </ol>
 <h2>解决方法</h2>
 <p>可以使用string头文件里的 <code class="notranslate">getline</code> 函数来替代cin<br>
-使用方法：</p>
+首先需要引入string头文件：</p>
+<div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span></pre></div>
+<p>使用方法：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-en">getline</span>(cin, 变量名);</pre></div>
 <p>示例：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate">string input;  <span class="pl-c"><span class="pl-c">//</span>定义一个名为input的字符串类型变量</span>
