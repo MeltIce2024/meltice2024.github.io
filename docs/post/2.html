@@ -23,9 +23,18 @@
 ```cpp
 getline(cin, 变量名);
 ```
+> [!NOTE]
+> `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+> ```cpp
+> string test1;  //声明一个名为test1的字符串型变量
+> int test;  //声明一个名为test的整形变量
+> getline(cin, test1);
+> test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+> ```
+
 示例：
 ```cpp
-string input;  //定义一个名为input的字符串类型变量
+string input;  //声明一个名为input的字符串型变量
 getline(cin, input);
 ```
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>'}## -->。">
@@ -43,9 +52,18 @@ getline(cin, input);
 ```cpp
 getline(cin, 变量名);
 ```
+> [!NOTE]
+> `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+> ```cpp
+> string test1;  //声明一个名为test1的字符串型变量
+> int test;  //声明一个名为test的整形变量
+> getline(cin, test1);
+> test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+> ```
+
 示例：
 ```cpp
-string input;  //定义一个名为input的字符串类型变量
+string input;  //声明一个名为input的字符串型变量
 getline(cin, input);
 ```
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>'}## -->。">
@@ -89,7 +107,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     font-size: 12px;
 }
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style>
 
 
 
@@ -130,8 +148,14 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span></pre></div>
 <p>使用方法：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-en">getline</span>(cin, 变量名);</pre></div>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p><code class="notranslate">getline</code> 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做</p>
+<div class="highlight highlight-source-c++"><pre class="notranslate">string test1;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为test1的字符串型变量</span>
+<span class="pl-k">int</span> test;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为test的整形变量</span>
+<span class="pl-en">getline</span>(cin, test1);
+test = stoi(test1);  <span class="pl-c"><span class="pl-c">//</span>将变量test1转为整形并存储于变量test中</span></pre></div>
+</div>
 <p>示例：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">string input;  <span class="pl-c"><span class="pl-c">//</span>定义一个名为input的字符串类型变量</span>
+<div class="highlight highlight-source-c++"><pre class="notranslate">string input;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为input的字符串型变量</span>
 <span class="pl-en">getline</span>(cin, input);</pre></div>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;">By MeltIce.</div>

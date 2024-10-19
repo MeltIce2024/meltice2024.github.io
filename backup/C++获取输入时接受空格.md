@@ -11,9 +11,18 @@
 ```cpp
 getline(cin, 变量名);
 ```
+> [!NOTE]
+> `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+> ```cpp
+> string test1;  //声明一个名为test1的字符串型变量
+> int test;  //声明一个名为test的整形变量
+> getline(cin, test1);
+> test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+> ```
+
 示例：
 ```cpp
-string input;  //定义一个名为input的字符串类型变量
+string input;  //声明一个名为input的字符串型变量
 getline(cin, input);
 ```
 <!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
