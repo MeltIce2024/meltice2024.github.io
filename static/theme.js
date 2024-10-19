@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .markdown-body code, .markdown-body tt {
-            background-color: rgb(141 150 161 / 20%);
+            border-radius: 10px;
         }
 
         video {
