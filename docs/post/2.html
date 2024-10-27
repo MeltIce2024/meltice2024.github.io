@@ -11,11 +11,11 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="## 问题
-1. 使用cin获取输入的时候，如果输入内容有空格，则cin只会获取空格前面的内容
+1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
-可以使用string头文件里的 `getline` 函数来替代cin
-首先需要引入string头文件：
+可以使用 string 头文件里的 `getline` 函数来替代 `cin`
+首先需要引入 string 头文件：
 ```cpp
 #include <string>
 ```
@@ -38,13 +38,13 @@ string input;  //声明一个名为input的字符串型变量
 getline(cin, input);
 ```
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>'}## -->。">
-<meta property="og:title" content="解决C++获取输入时无法接收空格">
+<meta property="og:title" content="解决C++输入时无法接收空格">
 <meta property="og:description" content="## 问题
-1. 使用cin获取输入的时候，如果输入内容有空格，则cin只会获取空格前面的内容
+1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
-可以使用string头文件里的 `getline` 函数来替代cin
-首先需要引入string头文件：
+可以使用 string 头文件里的 `getline` 函数来替代 `cin`
+首先需要引入 string 头文件：
 ```cpp
 #include <string>
 ```
@@ -70,7 +70,7 @@ getline(cin, input);
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://note.mtice.top/post/2.html">
 <meta property="og:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&spec=640&img_type=jpg">
-<title>解决C++获取输入时无法接收空格</title>
+<title>解决C++输入时无法接收空格</title>
 <link href="//unpkg.com/@wooorm/starry-night@2.1.1/style/both.css" rel="stylesheet" />
 
 
@@ -113,7 +113,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 
 <body>
     <div id="header">
-<h1 class="postTitle">解决C++获取输入时无法接收空格</h1>
+<h1 class="postTitle">解决C++输入时无法接收空格</h1>
 <div class="title-right">
     <a href="http://note.mtice.top" id="buttonHome" class="btn btn-invisible circle" title="首页">
         <svg class="octicon" width="16" height="16">
@@ -139,12 +139,12 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>问题</h2>
 <ol>
-<li>使用cin获取输入的时候，如果输入内容有空格，则cin只会获取空格前面的内容</li>
+<li>使用 <code class="notranslate">cin</code> 获取输入的时候，如果输入内容有空格，则 <code class="notranslate">cin</code> 只会获取空格前面的内容</li>
 <li>未输入内容时按回车键不会进入下面的程序，而是会换行</li>
 </ol>
 <h2>解决方法</h2>
-<p>可以使用string头文件里的 <code class="notranslate">getline</code> 函数来替代cin<br>
-首先需要引入string头文件：</p>
+<p>可以使用 string 头文件里的 <code class="notranslate">getline</code> 函数来替代 <code class="notranslate">cin</code><br>
+首先需要引入 string 头文件：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span></pre></div>
 <p>使用方法：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-en">getline</span>(cin, 变量名);</pre></div>
