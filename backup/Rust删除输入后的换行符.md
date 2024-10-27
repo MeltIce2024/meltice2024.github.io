@@ -43,3 +43,5 @@ root@localhost:~# ./test
 你输入了 10 数字
 root@localhost:~#
 ```
+
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
