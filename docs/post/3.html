@@ -184,7 +184,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     io<span class="pl-kos">::</span><span class="pl-en">stdin</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
         <span class="pl-kos">.</span><span class="pl-en">read_line</span><span class="pl-kos">(</span><span class="pl-c1">&amp;</span><span class="pl-k">mut</span> num<span class="pl-kos">)</span>
         <span class="pl-kos">.</span><span class="pl-en">expect</span><span class="pl-kos">(</span><span class="pl-s">"???"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-en">println</span><span class="pl-en">!</span><span class="pl-kos">(</span><span class="pl-s">"你输入了 {} 数字"</span><span class="pl-kos">,</span> <span class="pl-s1">num</span><span class="pl-c1"></span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-en">println</span><span class="pl-en">!</span><span class="pl-kos">(</span><span class="pl-s">"你输入了 <span class="pl-kos">{</span><span class="pl-kos">}</span> 数字"</span><span class="pl-kos">,</span> num<span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
 <p>输出结果为:</p>
 <div class="highlight highlight-source-shell"><pre class="notranslate">root@localhost:<span class="pl-k">~</span><span class="pl-c"><span class="pl-c">#</span> ./test</span>
@@ -203,7 +203,7 @@ root@localhost:<span class="pl-k">~</span><span class="pl-c"><span class="pl-c">
         <span class="pl-kos">.</span><span class="pl-en">read_line</span><span class="pl-kos">(</span><span class="pl-c1">&amp;</span><span class="pl-k">mut</span> num1<span class="pl-kos">)</span>
         <span class="pl-kos">.</span><span class="pl-en">expect</span><span class="pl-kos">(</span><span class="pl-s">"???"</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
     <span class="pl-k">let</span> num = num1<span class="pl-kos">.</span><span class="pl-en">trim</span><span class="pl-kos">(</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
-    <span class="pl-en">println</span><span class="pl-en">!</span><span class="pl-kos">(</span><span class="pl-s">"你输入了 {} 数字"</span><span class="pl-kos">,</span> <span class="pl-s1">num</span><span class="pl-c1"></span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+    <span class="pl-en">println</span><span class="pl-en">!</span><span class="pl-kos">(</span><span class="pl-s">"你输入了 <span class="pl-kos">{</span><span class="pl-kos">}</span> 数字"</span><span class="pl-kos">,</span> num<span class="pl-kos">)</span><span class="pl-kos">;</span>
 <span class="pl-kos">}</span></pre></div>
 <p>输出结果为:</p>
 <div class="highlight highlight-source-shell"><pre class="notranslate">root@localhost:<span class="pl-k">~</span><span class="pl-c"><span class="pl-c">#</span> ./test</span>
