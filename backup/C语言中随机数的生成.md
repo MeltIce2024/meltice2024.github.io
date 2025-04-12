@@ -108,3 +108,5 @@ int main() {
 ```
 
 原文 [【C语言】rand srand time 三函数联合生成随机数（详解+用法）- 知乎](https://zhuanlan.zhihu.com/p/599489281)
+
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
