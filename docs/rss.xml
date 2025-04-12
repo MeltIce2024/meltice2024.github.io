@@ -1,5 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Mon, 03 Feb 2025 12:47:53 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>在QQ大于 8.9.71 版本中保存表情包</title><link>http://note.mtice.top/post/6.html</link><description>众所周知，腾讯在QQ8.9.71 中取消了保存表情包图片的功能。</description><guid isPermaLink="true">http://note.mtice.top/post/6.html</guid><pubDate>Mon, 03 Feb 2025 12:46:25 +0000</pubDate></item><item><title>Python 检测系统</title><link>http://note.mtice.top/post/5.html</link><description>### 方法一：利用 `os.name` 检测&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Sat, 12 Apr 2025 03:38:32 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>C语言中随机数的生成</title><link>http://note.mtice.top/post/8.html</link><description>## rand 随机数发生器
+- 头文件: `stdlib.h`
+- 功能: 生成一个随机数
+
+### rand 函数声明
+```c
+int rand (void);
+```
+rand函数无需传入参数，返回值是 0-RAND_MAX(32767) 之间的一个数。</description><guid isPermaLink="true">http://note.mtice.top/post/8.html</guid><pubDate>Sat, 12 Apr 2025 03:38:13 +0000</pubDate></item><item><title>在QQ大于 8.9.71 版本中保存表情包</title><link>http://note.mtice.top/post/6.html</link><description>众所周知，腾讯在QQ8.9.71 中取消了保存表情包图片的功能。</description><guid isPermaLink="true">http://note.mtice.top/post/6.html</guid><pubDate>Mon, 03 Feb 2025 12:46:25 +0000</pubDate></item><item><title>Python 检测系统</title><link>http://note.mtice.top/post/5.html</link><description>### 方法一：利用 `os.name` 检测&#13;
 `os.name` 用于返回系统类型&#13;
 首先需要引入 `os` 模块&#13;
 ```python&#13;
