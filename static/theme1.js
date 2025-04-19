@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {    
     let currentUrl = window.location.pathname;
+    const currentYear = new Date().getFullYear();
     //let currentHost = window.location.hostname;
 
     //主页主题------------------------------------------------------------------------------
@@ -10,6 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         /* header布局*/
         
+        #header h1 {
+            font-weight: bold;
+        }
+
         .SideNav {
             border-radius: 10px; /* 圆角边框 */
             min-width: unset;
@@ -79,8 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let counter = document.createElement('div');
         counter.innerHTML = "<div>网站累计被访问次数</div><br><img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
         footer.insertBefore(counter, footer.firstChild);
-        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
-        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
+        document.getElementById("footer1").innerHTML = "Copyright &copy; " + currentYear + " MPGA Team";
     }
 
 
@@ -101,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .markdown-body .highlight pre, .markdown-body pre {
-            background: rgba(255, 255, 255, 0.85);
             border-radius: 10px;
         }
 
@@ -154,8 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
-        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
+        document.getElementById("footer1").innerHTML = "Copyright &copy; " + currentYear + " MPGA Team";
     } 
 
 
@@ -250,8 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
-        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
+        document.getElementById("footer1").innerHTML = "Copyright &copy; " + currentYear + " MPGA Team";
     
         // 搜索框回车触发
         let input = document.getElementsByClassName("form-control subnav-search-input float-left")[0];
