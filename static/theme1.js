@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav-item:hover {
-            background-color: #DDDDDD;
             border-radius: 10px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -50,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #DDDDDD;
         }
         
         div.title-right .btn .btndescription {
@@ -97,10 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         /* markdown内容 */
         .markdown-body img {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
         .markdown-alert {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
@@ -109,6 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .markdown-body code, .markdown-body tt {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
@@ -130,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #DDDDDD;
         }
 
         div.title-right .btn .btndescription {
@@ -179,7 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav-item:hover {
-            background-color: #DDDDDD;
             border-radius: 10px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
@@ -204,7 +203,6 @@ document.addEventListener('DOMContentLoaded', function() {
         div.title-right .btn:hover {
             width: auto;
             border-radius: 2em !important;
-            background-color: #DDDDDD;
         }
         
         div.title-right .btn .btndescription {
