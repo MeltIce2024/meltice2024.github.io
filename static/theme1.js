@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let footer = document.getElementById('footer');
         let counter = document.createElement('div');
-        counter.innerHTML = "<img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
+        counter.innerHTML = "网站累计被访问次数<br><img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
         footer.insertBefore(counter, footer.firstChild);
     }
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let footer = document.getElementById('footer');
         let counter = document.createElement('div');
-        counter.innerHTML = "<img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
+        counter.innerHTML = "网站累计被访问次数<br><img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
         footer.insertBefore(counter, footer.firstChild);
     } 
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         let footer = document.getElementById('footer');
         let counter = document.createElement('div');
-        counter.innerHTML = "<img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
+        counter.innerHTML = "网站累计被访问次数<br><img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
         footer.insertBefore(counter, footer.firstChild);
     
         // 搜索框回车触发
