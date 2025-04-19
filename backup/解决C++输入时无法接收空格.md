@@ -25,4 +25,4 @@ getline(cin, 变量名);
 string input;  //声明一个名为input的字符串型变量
 getline(cin, input);
 ```
-<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>"}## -->
