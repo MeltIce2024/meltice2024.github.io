@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             display: none;
             margin-left: 3px;
             white-space: nowrap;
+            mix-blend-mode: difference;
             color: black;
             font-weight: bold;
         }
@@ -95,12 +96,10 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         /* markdown内容 */
         .markdown-body img {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
         .markdown-alert {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
@@ -109,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .markdown-body code, .markdown-body tt {
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
         }
 
@@ -137,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
             display: none;
             margin-left: 3px;
             white-space: nowrap;
+            mix-blend-mode: difference;
             color: black;
             font-weight: bold;
         }
@@ -209,6 +208,7 @@ document.addEventListener('DOMContentLoaded', function() {
             display: none;
             margin-left: 3px;
             white-space: nowrap;
+            mix-blend-mode: difference;
             color: black;
             font-weight: bold;
         }
