@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Sat, 19 Apr 2025 10:30:26 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>CSS自定义字体</title><link>http://note.mtice.top/post/12.html</link><description>在 CSS 中使用自定义字体可以通过 `@font-face` 规则实现，允许你加载并使用非系统默认的字体。</description><guid isPermaLink="true">http://note.mtice.top/post/12.html</guid><pubDate>Sat, 19 Apr 2025 06:09:39 +0000</pubDate></item><item><title>网页添加必应搜索框</title><link>http://note.mtice.top/post/11.html</link><description>## 需求
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Sat, 19 Apr 2025 10:31:15 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>CSS自定义字体</title><link>http://note.mtice.top/post/12.html</link><description>在 CSS 中使用自定义字体可以通过 `@font-face` 规则实现，允许你加载并使用非系统默认的字体。</description><guid isPermaLink="true">http://note.mtice.top/post/12.html</guid><pubDate>Sat, 19 Apr 2025 06:09:39 +0000</pubDate></item><item><title>网页添加必应搜索框</title><link>http://note.mtice.top/post/11.html</link><description>## 需求
 在网页中添加一个输入框和一个按钮，成为搜索框，用于必应搜索。</description><guid isPermaLink="true">http://note.mtice.top/post/11.html</guid><pubDate>Sat, 19 Apr 2025 05:57:03 +0000</pubDate></item><item><title>Python format()方法的格式控制</title><link>http://note.mtice.top/post/10.html</link><description>`format()`方法中模版字符串的槽中除了包括参数序号，还可以包括格式控制信息，此时，槽的内部样式如下：
 ```python
 {&lt;参数序号&gt;:&lt;格式控制标记&gt;}
@@ -71,53 +71,53 @@ printa('Hello, World!')&#13;
 ```&#13;
 &#13;
 &lt;!-- ##{'script':'&lt;script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'&gt;&lt;/script&gt;'}## --&gt;&#13;
-。</description><guid isPermaLink="true">http://note.mtice.top/post/4.html</guid><pubDate>Sun, 03 Nov 2024 09:30:03 +0000</pubDate></item><item><title>Rust删除输入后的换行符</title><link>http://note.mtice.top/post/3.html</link><description>## 问题&#13;
-在 `io::stdin()` 中，会将用户的输入自动添加上换行符，就像这样:&#13;
-```Rust&#13;
-use std::io;&#13;
-fn main() {&#13;
-    println!('输入一个数字');&#13;
-    let mut num = String::new();&#13;
-    io::stdin()&#13;
-        .read_line(&amp;mut num)&#13;
-        .expect('???');&#13;
-    println!('你输入了 {} 数字', num);&#13;
-}&#13;
-```&#13;
-输出结果为: &#13;
-```Bash&#13;
-root@localhost:~# ./test&#13;
-输入一个数字&#13;
-10&#13;
-你输入了 10&#13;
- 数字&#13;
-root@localhost:~#&#13;
-```&#13;
-&#13;
-## 解决方法&#13;
-可以先用一个变量存储输入的内容，再用另一个变量使用 `trim()` 来去除末尾换行符，例如:&#13;
-```Rust&#13;
-use std::io;&#13;
-fn main() {&#13;
-    println!('输入一个数字');&#13;
-    let mut num1 = String::new();&#13;
-    io::stdin()&#13;
-        .read_line(&amp;mut num1)&#13;
-        .expect('???');&#13;
-    let num = num1.trim();&#13;
-    println!('你输入了 {} 数字', num);&#13;
-}&#13;
-```&#13;
-输出结果为:&#13;
-```Bash&#13;
-root@localhost:~# ./test&#13;
-输入一个数字&#13;
-10&#13;
-你输入了 10 数字&#13;
-root@localhost:~#&#13;
-```&#13;
-&#13;
-&lt;!-- ##{'script':'&lt;script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'&gt;&lt;/script&gt;'}## --&gt;。</description><guid isPermaLink="true">http://note.mtice.top/post/3.html</guid><pubDate>Sun, 27 Oct 2024 01:45:30 +0000</pubDate></item><item><title>解决C++输入时无法接收空格</title><link>http://note.mtice.top/post/2.html</link><description>## 问题&#13;
+。</description><guid isPermaLink="true">http://note.mtice.top/post/4.html</guid><pubDate>Sun, 03 Nov 2024 09:30:03 +0000</pubDate></item><item><title>Rust删除输入后的换行符</title><link>http://note.mtice.top/post/3.html</link><description>## 问题
+在 `io::stdin()` 中，会将用户的输入自动添加上换行符，就像这样:
+```Rust
+use std::io;
+fn main() {
+    println!('输入一个数字');
+    let mut num = String::new();
+    io::stdin()
+        .read_line(&amp;mut num)
+        .expect('???');
+    println!('你输入了 {} 数字', num);
+}
+```
+输出结果为: 
+```Bash
+root@localhost:~# ./test
+输入一个数字
+10
+你输入了 10
+ 数字
+root@localhost:~#
+```
+
+## 解决方法
+可以先用一个变量存储输入的内容，再用另一个变量使用 `trim()` 来去除末尾换行符，例如:
+```Rust
+use std::io;
+fn main() {
+    println!('输入一个数字');
+    let mut num1 = String::new();
+    io::stdin()
+        .read_line(&amp;mut num1)
+        .expect('???');
+    let num = num1.trim();
+    println!('你输入了 {} 数字', num);
+}
+```
+输出结果为:
+```Bash
+root@localhost:~# ./test
+输入一个数字
+10
+你输入了 10 数字
+root@localhost:~#
+```
+
+&lt;!-- ##{'script':'&lt;script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'&gt;&lt;/script&gt;'}## --&gt;。</description><guid isPermaLink="true">http://note.mtice.top/post/3.html</guid><pubDate>Sun, 27 Oct 2024 01:45:30 +0000</pubDate></item><item><title>解决C++输入时无法接收空格</title><link>http://note.mtice.top/post/2.html</link><description>## 问题&#13;
 1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容&#13;
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行&#13;
 ## 解决方法&#13;
