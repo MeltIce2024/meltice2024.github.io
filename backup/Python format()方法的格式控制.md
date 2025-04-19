@@ -40,4 +40,4 @@
 > [!TIP]
 > 浮点数输出时尽量使用 `<.精度>`表示小数部分的宽度，有助于更好控制输出格式。
 
-<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/articletoc.js'></script>"}## -->
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>"}## -->
