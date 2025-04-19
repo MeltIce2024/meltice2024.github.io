@@ -15,5 +15,5 @@
     "exlink":{"个人主页": "https://mtice.top"},
     "bottomText":"By MeltIce.",
     "script":"<script src='https://code.buxiantang.top/assets/backtop.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script>document.querySelectorAll('a').forEach(anchor => {const img = anchor.querySelector('img');if (img && img.hasAttribute('data-canonical-src')) {const canonicalSrc = img.getAttribute('data-canonical-src');anchor.setAttribute('href', canonicalSrc);img.setAttribute('src', canonicalSrc);img.removeAttribute('data-canonical-src');}});</script>",
-    "allHead":"<script src='https://note.mtice.top/theme1.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>"
+    "allHead":"<script src='https://meltice2024.github.io/theme1.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>"
 }
