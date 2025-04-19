@@ -50,34 +50,12 @@ document.addEventListener('DOMContentLoaded', function() {
             width: auto;
             border-radius: 2em !important;
         }
-        
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            mix-blend-mode: difference;
-            color: black;
-            font-weight: bold;
-        }
-        
+            
         div.title-right .btn:hover .btndescription {
             display: inline;
         }
         `;
         document.head.appendChild(style);
-
-        //右上角按钮描述
-        let topright_buttons = document.querySelectorAll(".title-right a.btn");
-
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
 
         let footer = document.getElementById('footer');
         let counter = document.createElement('div');
@@ -131,30 +109,11 @@ document.addEventListener('DOMContentLoaded', function() {
             border-radius: 2em !important;
         }
 
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            mix-blend-mode: difference;
-            color: black;
-            font-weight: bold;
-        }
-
         div.title-right .btn:hover .btndescription {
             display: inline;
         }
         `;
         document.head.appendChild(style);
-
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
 
         document.getElementById("footer1").innerHTML = "Copyright &copy; " + currentYear + " MPGA Team";
     } 
@@ -203,16 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
             width: auto;
             border-radius: 2em !important;
         }
-        
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            mix-blend-mode: difference;
-            color: black;
-            font-weight: bold;
-        }
-        
+
         div.title-right .btn:hover .btndescription {
             display: inline;
         }
@@ -236,19 +186,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         `;
         document.head.appendChild(style);
-        
-        //右上角按钮描述
-        let topright_buttons = document.querySelectorAll(".title-right a.btn");
-
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
 
         document.getElementById("footer1").innerHTML = "Copyright &copy; " + currentYear + " MPGA Team";
     
