@@ -9,40 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         let style = document.createElement("style");
         style.innerHTML = `
         /* header布局*/
-        .blogTitle {
-            display: unset;
-        }
-        
-        #header {
-            height: 340px;
-        }
-        
-        #header h1 {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        .title-right {
-            margin: unset;
-            margin-top: 295px;
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .avatar {
-            width: 125px;
-            height: 125px;
-        }
-        
-        #header h1 a {
-            margin-top: 30px;
-            font-family: fantasy;
-            margin-left: unset;
-        }
         
         .SideNav {
             border-radius: 10px; /* 圆角边框 */
@@ -113,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
         let counter = document.createElement('div');
         counter.innerHTML = "<div>网站累计被访问次数</div><br><img src='https://count.himiku.com/get/@notemtice?theme=moebooru'>";
         footer.insertBefore(counter, footer.firstChild);
+        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
+        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
     }
 
 
@@ -185,6 +153,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.appendChild(btndescription);
             }
         });
+
+        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
+        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
     } 
 
 
@@ -278,6 +249,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 button.appendChild(btndescription);
             }
         });
+
+        document.getElementById("footer1").innerHTML = "Copyright © <span id='copyrightYear'></span> MPGA Team";
+        document.getElementById("footer2").innerHTML = "<span id='runday'></span>";
     
         // 搜索框回车触发
         let input = document.getElementsByClassName("form-control subnav-search-input float-left")[0];
