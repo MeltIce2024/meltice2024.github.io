@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         .SideNav {
-            border-radius: 10px; /* 圆角边框 */
+            border-radius: 15px; /* 圆角边框 */
             min-width: unset;
         }
         
         .SideNav-item:hover {
-            border-radius: 10px;
+            border-radius: 15px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
@@ -74,23 +74,23 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         /* markdown内容 */
         .markdown-body img {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .markdown-alert {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .markdown-body .highlight pre, .markdown-body pre {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         .markdown-body code, .markdown-body tt {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         video {
-            border-radius: 10px;
+            border-radius: 15px;
         }
 
         /* 右上角按钮 */
@@ -132,12 +132,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         .SideNav {
-            border-radius: 10px; /* 圆角边框 */
+            border-radius: 15px; /* 圆角边框 */
             min-width: unset;
         }
         
         .SideNav-item:hover {
-            border-radius: 10px;
+            border-radius: 15px;
             transform: scale(1.02);
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         }
