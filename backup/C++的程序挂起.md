@@ -19,7 +19,7 @@ std::this_thread::sleep_for(std::chrono::microseconds(微秒数);
 ```
 如果嫌麻烦可以封装为一个函数:
 ```cpp
-void sleep(int time)
+void sleep(double time)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<long long> (time * 1000)));
 }

@@ -31,7 +31,7 @@ std::this_thread::sleep_for(std::chrono::microseconds(微秒数);
 ```
 如果嫌麻烦可以封装为一个函数:
 ```cpp
-void sleep(int time)
+void sleep(double time)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<long long> (time * 1000)));
 }
@@ -63,7 +63,7 @@ std::this_thread::sleep_for(std::chrono::microseconds(微秒数);
 ```
 如果嫌麻烦可以封装为一个函数:
 ```cpp
-void sleep(int time)
+void sleep(double time)
 {
     std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<long long> (time * 1000)));
 }
@@ -156,7 +156,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <span class="pl-c"><span class="pl-c">//</span> 单位为微秒</span>
 <span class="pl-en">std::this_thread::sleep_for</span>(std::chrono::microseconds(微秒数);</pre></div>
 <p>如果嫌麻烦可以封装为一个函数:</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-k">void</span> <span class="pl-en">sleep</span>(<span class="pl-k">int</span> time)
+<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-k">void</span> <span class="pl-en">sleep</span>(<span class="pl-k">double</span> time)
 {
     <span class="pl-c1">std::this_thread::sleep_for</span>(<span class="pl-c1">std::chrono::milliseconds</span>(<span class="pl-k">static_cast</span>&lt;<span class="pl-k">long</span> <span class="pl-k">long</span>&gt; (<span class="pl-c1">time</span> * <span class="pl-c1">1000</span>)));
 }</pre></div>
