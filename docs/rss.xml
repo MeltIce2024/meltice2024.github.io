@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Fri, 25 Apr 2025 09:10:06 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>CSS自定义字体</title><link>http://note.mtice.top/post/12.html</link><description>在 CSS 中使用自定义字体可以通过 `@font-face` 规则实现，允许你加载并使用非系统默认的字体。</description><guid isPermaLink="true">http://note.mtice.top/post/12.html</guid><pubDate>Sat, 19 Apr 2025 06:09:39 +0000</pubDate></item><item><title>网页添加必应搜索框</title><link>http://note.mtice.top/post/11.html</link><description>### HTML部分
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Fri, 25 Apr 2025 09:17:01 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>CSS自定义字体</title><link>http://note.mtice.top/post/12.html</link><description>在 CSS 中使用自定义字体可以通过 `@font-face` 规则实现，允许你加载并使用非系统默认的字体。</description><guid isPermaLink="true">http://note.mtice.top/post/12.html</guid><pubDate>Sat, 19 Apr 2025 06:09:39 +0000</pubDate></item><item><title>网页添加必应搜索框</title><link>http://note.mtice.top/post/11.html</link><description>### HTML部分
 ```html
 &lt;form onsubmit='return search()' style='white-space: nowrap;'&gt;
     &lt;input type='text' autocomplete='off' id='search_input' placeholder='必应搜索...'&gt;
@@ -124,31 +124,31 @@ root@localhost:~#
 ```
 
 &lt;!-- ##{'script':'&lt;script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'&gt;&lt;/script&gt;'}## --&gt;。</description><guid isPermaLink="true">http://note.mtice.top/post/3.html</guid><pubDate>Sun, 27 Oct 2024 01:45:30 +0000</pubDate></item><item><title>解决C++输入时无法接收空格</title><link>http://note.mtice.top/post/2.html</link><description>## 问题
-1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容
+1. 使用 `std::cin` 获取输入的时候，如果输入内容有空格，则 `std::cin` 只会获取空格前面的内容
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
-可以使用 string 头文件里的 `getline` 函数来替代 `cin`
+可以使用 string 头文件里的 `std::getline` 函数来替代 `std::cin`
 首先需要引入 string 头文件：
 ```cpp
 #include &lt;string&gt;
 ```
 使用方法：
 ```cpp
-getline(cin, 变量名);
+std::getline(std::cin, 变量名);
 ```
 &gt; [!NOTE]
-&gt; `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+&gt; `std::getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
 &gt; ```cpp
-&gt; string test1;  //声明一个名为test1的字符串型变量
-&gt; int test;  //声明一个名为test的整形变量
-&gt; getline(cin, test1);
-&gt; test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+&gt; std::string test1;  // 声明一个名为test1的字符串型变量
+&gt; int test;  // 声明一个名为test的整形变量
+&gt; std::getline(std::cin, test1);
+&gt; test = std::stoi(test1);  // 将变量test1转为整形并存储于变量test中
 &gt; ```
 
 示例：
 ```cpp
-string input;  //声明一个名为input的字符串型变量
-getline(cin, input);
+std::string input;  // 声明一个名为input的字符串型变量
+std::getline(std::cin, input);
 ```
 &lt;!-- ##{'script':'&lt;script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'&gt;&lt;/script&gt;'}## --&gt;。</description><guid isPermaLink="true">http://note.mtice.top/post/2.html</guid><pubDate>Sat, 19 Oct 2024 08:06:04 +0000</pubDate></item><item><title>C++生成范围内随机整数</title><link>http://note.mtice.top/post/1.html</link><description>##  1. `&lt;random&gt;`库方法 (C++11以上)
 C++11新增了`&lt;random&gt;`库，用于生成更高质量的随机数

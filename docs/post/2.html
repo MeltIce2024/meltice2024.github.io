@@ -11,60 +11,60 @@
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
 <meta name="description" content="## 问题
-1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容
+1. 使用 `std::cin` 获取输入的时候，如果输入内容有空格，则 `std::cin` 只会获取空格前面的内容
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
-可以使用 string 头文件里的 `getline` 函数来替代 `cin`
+可以使用 string 头文件里的 `std::getline` 函数来替代 `std::cin`
 首先需要引入 string 头文件：
 ```cpp
 #include <string>
 ```
 使用方法：
 ```cpp
-getline(cin, 变量名);
+std::getline(std::cin, 变量名);
 ```
 > [!NOTE]
-> `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+> `std::getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
 > ```cpp
-> string test1;  //声明一个名为test1的字符串型变量
-> int test;  //声明一个名为test的整形变量
-> getline(cin, test1);
-> test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+> std::string test1;  // 声明一个名为test1的字符串型变量
+> int test;  // 声明一个名为test的整形变量
+> std::getline(std::cin, test1);
+> test = std::stoi(test1);  // 将变量test1转为整形并存储于变量test中
 > ```
 
 示例：
 ```cpp
-string input;  //声明一个名为input的字符串型变量
-getline(cin, input);
+std::string input;  // 声明一个名为input的字符串型变量
+std::getline(std::cin, input);
 ```
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->。">
 <meta property="og:title" content="解决C++输入时无法接收空格">
 <meta property="og:description" content="## 问题
-1. 使用 `cin` 获取输入的时候，如果输入内容有空格，则 `cin` 只会获取空格前面的内容
+1. 使用 `std::cin` 获取输入的时候，如果输入内容有空格，则 `std::cin` 只会获取空格前面的内容
 2. 未输入内容时按回车键不会进入下面的程序，而是会换行
 ## 解决方法
-可以使用 string 头文件里的 `getline` 函数来替代 `cin`
+可以使用 string 头文件里的 `std::getline` 函数来替代 `std::cin`
 首先需要引入 string 头文件：
 ```cpp
 #include <string>
 ```
 使用方法：
 ```cpp
-getline(cin, 变量名);
+std::getline(std::cin, 变量名);
 ```
 > [!NOTE]
-> `getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
+> `std::getline` 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做
 > ```cpp
-> string test1;  //声明一个名为test1的字符串型变量
-> int test;  //声明一个名为test的整形变量
-> getline(cin, test1);
-> test = stoi(test1);  //将变量test1转为整形并存储于变量test中
+> std::string test1;  // 声明一个名为test1的字符串型变量
+> int test;  // 声明一个名为test的整形变量
+> std::getline(std::cin, test1);
+> test = std::stoi(test1);  // 将变量test1转为整形并存储于变量test中
 > ```
 
 示例：
 ```cpp
-string input;  //声明一个名为input的字符串型变量
-getline(cin, input);
+std::string input;  // 声明一个名为input的字符串型变量
+std::getline(std::cin, input);
 ```
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->。">
 <meta property="og:type" content="article">
@@ -139,24 +139,24 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>问题</h2>
 <ol>
-<li>使用 <code class="notranslate">cin</code> 获取输入的时候，如果输入内容有空格，则 <code class="notranslate">cin</code> 只会获取空格前面的内容</li>
+<li>使用 <code class="notranslate">std::cin</code> 获取输入的时候，如果输入内容有空格，则 <code class="notranslate">std::cin</code> 只会获取空格前面的内容</li>
 <li>未输入内容时按回车键不会进入下面的程序，而是会换行</li>
 </ol>
 <h2>解决方法</h2>
-<p>可以使用 string 头文件里的 <code class="notranslate">getline</code> 函数来替代 <code class="notranslate">cin</code><br>
+<p>可以使用 string 头文件里的 <code class="notranslate">std::getline</code> 函数来替代 <code class="notranslate">std::cin</code><br>
 首先需要引入 string 头文件：</p>
 <div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>string<span class="pl-pds">&gt;</span></span></pre></div>
 <p>使用方法：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-en">getline</span>(cin, 变量名);</pre></div>
-<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p><code class="notranslate">getline</code> 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">string test1;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为test1的字符串型变量</span>
-<span class="pl-k">int</span> test;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为test的整形变量</span>
-<span class="pl-en">getline</span>(cin, test1);
-test = stoi(test1);  <span class="pl-c"><span class="pl-c">//</span>将变量test1转为整形并存储于变量test中</span></pre></div>
+<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-en">std::getline</span>(std::cin, 变量名);</pre></div>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p><code class="notranslate">std::getline</code> 仅支持string类型变量，因此想要获取输入到int类型变量可以这么做</p>
+<div class="highlight highlight-source-c++"><pre class="notranslate">std::string test1;  <span class="pl-c"><span class="pl-c">//</span> 声明一个名为test1的字符串型变量</span>
+<span class="pl-k">int</span> test;  <span class="pl-c"><span class="pl-c">//</span> 声明一个名为test的整形变量</span>
+<span class="pl-en">std::getline</span>(std::cin, test1);
+test = std::stoi(test1);  <span class="pl-c"><span class="pl-c">//</span> 将变量test1转为整形并存储于变量test中</span></pre></div>
 </div>
 <p>示例：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">string input;  <span class="pl-c"><span class="pl-c">//</span>声明一个名为input的字符串型变量</span>
-<span class="pl-en">getline</span>(cin, input);</pre></div>
+<div class="highlight highlight-source-c++"><pre class="notranslate">std::string input;  <span class="pl-c"><span class="pl-c">//</span> 声明一个名为input的字符串型变量</span>
+<span class="pl-en">std::getline</span>(std::cin, input);</pre></div>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;">By MeltIce.</div>
 
