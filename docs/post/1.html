@@ -10,56 +10,94 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="### 1. 包含头文件 random
+<meta name="description" content="##  1. `<random>`库方法 (C++11以上)
+C++11新增了`<random>`库，用于生成更高质量的随机数
+
+### 使用方法：
+
+#### 1. 包含头文件 random
 ```cpp
 #include <random>
 ```
-### 2. 创建一个随机数生成器对象
-创建一个基于 Mersenne Twister 算法的随机数生成器
+#### 2. 创建一个随机数生成器对象
+
+
 ```cpp
-mt19937 generator;
+std::random_device genr;  // 使用设备信息生成随机数种子，质量更高
+std::mt19937 gen(genr());  // 创建一个基于梅森螺旋算法的随机数生成器，使用设备信息种子
 ```
-### 3. 创建一个均匀分布的随机数生成器
+#### 3. 创建一个均匀分布的随机数生成器
 ```cpp
-uniform_int_distribution<int> distribution(整数范围);
+// 用于生成整数
+std::uniform_int_distribution<int> dist(整数范围); 
+// 用于生成整数
+std::uniform_real_distribution<float> dist(整数范围);
 ```
 例如：
 ```cpp
-uniform_int_distribution<int> distribution(1, 10);
+// 这段代码会让生成器生成1到10之内的随机整数
+std::uniform_int_distribution<int> dist(1, 10);
+// 这段代码会让生成器生成0.5到2.5之内的随机浮点数
+std::uniform_real_distribution<float> dist(0.5, 2.5);
 ```
-这段代码会让生成器生成1到10之内的随机整数
-### 4. 生成随机数
-使用 `distribution(generator)` 生成随机数
+
+#### 4. 生成随机数
+使用 `dist(gen)` 生成随机数
 打印出生成的随机数：
 ```cpp
-cout << '随机数: ' << distribution(generator) << endl;
+std::cout << '随机数: ' << dist(gen) << std::endl;
 ```
+
+## 2. 使用C风格`rand()`函数
+> [!NOTE]
+> 使用这种方式生成的随机数质量较低，且会有分布不均匀，线程不安全等问题，所以建议不要再使用这个方法
+
+具体方法见 [C语言的随机数生成](https://note.mtice.top/post/8.html)
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->。">
 <meta property="og:title" content="C++生成范围内随机整数">
-<meta property="og:description" content="### 1. 包含头文件 random
+<meta property="og:description" content="##  1. `<random>`库方法 (C++11以上)
+C++11新增了`<random>`库，用于生成更高质量的随机数
+
+### 使用方法：
+
+#### 1. 包含头文件 random
 ```cpp
 #include <random>
 ```
-### 2. 创建一个随机数生成器对象
-创建一个基于 Mersenne Twister 算法的随机数生成器
+#### 2. 创建一个随机数生成器对象
+
+
 ```cpp
-mt19937 generator;
+std::random_device genr;  // 使用设备信息生成随机数种子，质量更高
+std::mt19937 gen(genr());  // 创建一个基于梅森螺旋算法的随机数生成器，使用设备信息种子
 ```
-### 3. 创建一个均匀分布的随机数生成器
+#### 3. 创建一个均匀分布的随机数生成器
 ```cpp
-uniform_int_distribution<int> distribution(整数范围);
+// 用于生成整数
+std::uniform_int_distribution<int> dist(整数范围); 
+// 用于生成整数
+std::uniform_real_distribution<float> dist(整数范围);
 ```
 例如：
 ```cpp
-uniform_int_distribution<int> distribution(1, 10);
+// 这段代码会让生成器生成1到10之内的随机整数
+std::uniform_int_distribution<int> dist(1, 10);
+// 这段代码会让生成器生成0.5到2.5之内的随机浮点数
+std::uniform_real_distribution<float> dist(0.5, 2.5);
 ```
-这段代码会让生成器生成1到10之内的随机整数
-### 4. 生成随机数
-使用 `distribution(generator)` 生成随机数
+
+#### 4. 生成随机数
+使用 `dist(gen)` 生成随机数
 打印出生成的随机数：
 ```cpp
-cout << '随机数: ' << distribution(generator) << endl;
+std::cout << '随机数: ' << dist(gen) << std::endl;
 ```
+
+## 2. 使用C风格`rand()`函数
+> [!NOTE]
+> 使用这种方式生成的随机数质量较低，且会有分布不均匀，线程不安全等问题，所以建议不要再使用这个方法
+
+具体方法见 [C语言的随机数生成](https://note.mtice.top/post/8.html)
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://note.mtice.top/post/1.html">
@@ -101,7 +139,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     font-size: 12px;
 }
 </style>
-
+<style>.markdown-alert{padding:0.5rem 1rem;margin-bottom:1rem;border-left:.25em solid var(--borderColor-default,var(--color-border-default));}.markdown-alert .markdown-alert-title {display:flex;font-weight:var(--base-text-weight-medium,500);align-items:center;line-height:1;}.markdown-alert>:first-child {margin-top:0;}.markdown-alert>:last-child {margin-bottom:0;}</style><style>.markdown-alert.markdown-alert-note {border-left-color:var(--borderColor-accent-emphasis, var(--color-accent-emphasis));background-color:var(--color-accent-subtle);}.markdown-alert.markdown-alert-note .markdown-alert-title {color: var(--fgColor-accent,var(--color-accent-fg));}</style>
 
 
 
@@ -131,20 +169,32 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h3>1. 包含头文件 random</h3>
+<div class="markdown-body" id="postBody"><h2>1. <code class="notranslate">&lt;random&gt;</code>库方法 (C++11以上)</h2>
+<p>C++11新增了<code class="notranslate">&lt;random&gt;</code>库，用于生成更高质量的随机数</p>
+<h3>使用方法：</h3>
+<h4>1. 包含头文件 random</h4>
 <div class="highlight highlight-source-c++"><pre class="notranslate">#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>random<span class="pl-pds">&gt;</span></span></pre></div>
-<h3>2. 创建一个随机数生成器对象</h3>
-<p>创建一个基于 Mersenne Twister 算法的随机数生成器</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">mt19937 generator;</pre></div>
-<h3>3. 创建一个均匀分布的随机数生成器</h3>
-<div class="highlight highlight-source-c++"><pre class="notranslate">uniform_int_distribution&lt;<span class="pl-k">int</span>&gt; <span class="pl-en">distribution</span>(整数范围);</pre></div>
+<h4>2. 创建一个随机数生成器对象</h4>
+<div class="highlight highlight-source-c++"><pre class="notranslate">std::random_device genr;  <span class="pl-c"><span class="pl-c">//</span> 使用设备信息生成随机数种子，质量更高</span>
+std::mt19937 <span class="pl-en">gen</span>(genr());  <span class="pl-c"><span class="pl-c">//</span> 创建一个基于梅森螺旋算法的随机数生成器，使用设备信息种子</span></pre></div>
+<h4>3. 创建一个均匀分布的随机数生成器</h4>
+<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-c"><span class="pl-c">//</span> 用于生成整数</span>
+std::uniform_int_distribution&lt;<span class="pl-k">int</span>&gt; <span class="pl-en">dist</span>(整数范围); 
+<span class="pl-c"><span class="pl-c">//</span> 用于生成整数</span>
+std::uniform_real_distribution&lt;<span class="pl-k">float</span>&gt; <span class="pl-en">dist</span>(整数范围);</pre></div>
 <p>例如：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">uniform_int_distribution&lt;<span class="pl-k">int</span>&gt; <span class="pl-en">distribution</span>(<span class="pl-c1">1</span>, <span class="pl-c1">10</span>);</pre></div>
-<p>这段代码会让生成器生成1到10之内的随机整数</p>
-<h3>4. 生成随机数</h3>
-<p>使用 <code class="notranslate">distribution(generator)</code> 生成随机数<br>
+<div class="highlight highlight-source-c++"><pre class="notranslate"><span class="pl-c"><span class="pl-c">//</span> 这段代码会让生成器生成1到10之内的随机整数</span>
+std::uniform_int_distribution&lt;<span class="pl-k">int</span>&gt; <span class="pl-en">dist</span>(<span class="pl-c1">1</span>, <span class="pl-c1">10</span>);
+<span class="pl-c"><span class="pl-c">//</span> 这段代码会让生成器生成0.5到2.5之内的随机浮点数</span>
+std::uniform_real_distribution&lt;<span class="pl-k">float</span>&gt; <span class="pl-en">dist</span>(<span class="pl-c1">0.5</span>, <span class="pl-c1">2.5</span>);</pre></div>
+<h4>4. 生成随机数</h4>
+<p>使用 <code class="notranslate">dist(gen)</code> 生成随机数<br>
 打印出生成的随机数：</p>
-<div class="highlight highlight-source-c++"><pre class="notranslate">cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>随机数: <span class="pl-pds">"</span></span> &lt;&lt; distribution(generator) &lt;&lt; endl;</pre></div>
+<div class="highlight highlight-source-c++"><pre class="notranslate">std::cout &lt;&lt; <span class="pl-s"><span class="pl-pds">"</span>随机数: <span class="pl-pds">"</span></span> &lt;&lt; dist(gen) &lt;&lt; std::endl;</pre></div>
+<h2>2. 使用C风格<code class="notranslate">rand()</code>函数</h2>
+<div class="markdown-alert markdown-alert-note"><p class="markdown-alert-title"><svg class="octicon octicon-info mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p><p>使用这种方式生成的随机数质量较低，且会有分布不均匀，线程不安全等问题，所以建议不要再使用这个方法</p>
+</div>
+<p>具体方法见 <a href="https://note.mtice.top/post/8.html" rel="nofollow">C语言的随机数生成</a></p>
 </div>
 <div style="font-size:small;margin-top:8px;float:right;">By MeltIce.</div>
 
