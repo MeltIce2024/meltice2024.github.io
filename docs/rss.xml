@@ -1,5 +1,83 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Fri, 25 Apr 2025 16:01:17 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>C++的程序挂起</title><link>http://note.mtice.top/post/14.html</link><description>在Python中，我们可以使用`time.sleep()`来让程序挂起一段时间，在C++中，我们也可以让程序挂起
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Fri, 25 Apr 2025 23:56:06 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>不使用临时变量交换两个变量的值</title><link>http://note.mtice.top/post/15.html</link><description>### 方法一：使用加减运算符
+```cpp
+#include &lt;iostream&gt;
+
+void swap(int *a, int *b)
+{
+    *a = *a + *b;
+    *b = *a - *b;
+    *a = *a - *b;
+    return;
+}
+
+int main ()
+{
+   // 局部变量声明
+   int a = 100;
+   int b = 200;
+ 
+   std::cout &lt;&lt; '交换前，a 的值：' &lt;&lt; a &lt;&lt; std::endl;
+   std::cout &lt;&lt; '交换前，b 的值：' &lt;&lt; b &lt;&lt; std::endl;
+ 
+   // 调用函数来交换值
+   swap(&amp;a, &amp;b);
+ 
+   std::cout &lt;&lt; '交换后，a 的值：' &lt;&lt; a &lt;&lt; std::endl;
+   std::cout &lt;&lt; '交换后，b 的值：' &lt;&lt; b &lt;&lt; std::endl;
+ 
+   return 0;
+}
+```
+输出：
+```bash
+u0_a427@localhost ~/p/test&gt; ./test.out
+交换前，a 的值：100
+交换前，b 的值：200
+交换后，a 的值：200
+交换后，b 的值：100
+u0_a427@localhost ~/p/test&gt;
+```
+
+### 方法二：使用异或运算
+```cpp
+#include &lt;iostream&gt;
+
+void swap(int *a, int *b)
+{
+    *a = *a ^ *b;
+    *b = *a ^ *b;
+    *a = *a ^ *b;
+    return;
+}
+
+int main ()
+{
+   // 局部变量声明
+   int a = 100;
+   int b = 200;
+ 
+   std::cout &lt;&lt; '交换前，a 的值：' &lt;&lt; a &lt;&lt; std::endl;
+   std::cout &lt;&lt; '交换前，b 的值：' &lt;&lt; b &lt;&lt; std::endl;
+ 
+   // 调用函数来交换值
+   swap(&amp;a, &amp;b);
+ 
+   std::cout &lt;&lt; '交换后，a 的值：' &lt;&lt; a &lt;&lt; std::endl;
+   std::cout &lt;&lt; '交换后，b 的值：' &lt;&lt; b &lt;&lt; std::endl;
+ 
+   return 0;
+}
+```
+输出：
+```bash
+u0_a427@localhost ~/p/test&gt; ./test.out
+交换前，a 的值：100
+交换前，b 的值：200
+交换后，a 的值：200
+交换后，b 的值：100
+u0_a427@localhost ~/p/test&gt;
+```。</description><guid isPermaLink="true">http://note.mtice.top/post/15.html</guid><pubDate>Fri, 25 Apr 2025 23:55:41 +0000</pubDate></item><item><title>C++的程序挂起</title><link>http://note.mtice.top/post/14.html</link><description>在Python中，我们可以使用`time.sleep()`来让程序挂起一段时间，在C++中，我们也可以让程序挂起
 
 ## 方法一: 使用`&lt;thread&gt;`的`sleep_for()` (C++11以上)
 
