@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Fri, 25 Apr 2025 23:56:06 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>不使用临时变量交换两个变量的值</title><link>http://note.mtice.top/post/15.html</link><description>### 方法一：使用加减运算符
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce's Notebook</title><link>http://note.mtice.top</link><description>MeltIce 的赛博笔记本</description><copyright>MeltIce's Notebook</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://note.mtice.top</link></image><lastBuildDate>Sat, 26 Apr 2025 00:11:17 +0000</lastBuildDate><managingEditor>MeltIce's Notebook</managingEditor><ttl>60</ttl><webMaster>MeltIce's Notebook</webMaster><item><title>不使用临时变量交换两个变量的值</title><link>http://note.mtice.top/post/15.html</link><description>&gt; [!TIP]
+&gt; 在C++中，可以使用引用来替换指针，例如：
+&gt; ```cpp
+&gt; void swap(int &amp;a, int &amp;b)
+&gt; {
+&gt;     ...
+&gt; }
+&gt; 
+&gt; int a = 100, b = 200;
+&gt; swap(a, b);
+
+### 方法一：使用加减运算符
 ```cpp
 #include &lt;iostream&gt;
 
